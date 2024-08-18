@@ -5,8 +5,69 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 2000px;
+    background-color: black;
 }
 
 * {
-    font-family: 'Popins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+}
+
+h1 {
+    font-size: 40px;
+    margin-left: 40px;
+    color: #ffff;
+}
+
+span {
+    font-size: 45px;
+}
+
+.section li{
+    display: inline-block;
+    gap: 3rem;
+    margin-right: 50px;
+    position: relative;
+
+}
+
+.section a {
+    color: #ffff;
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.section a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: red;
+}
+
+.section a:hover::before {
+    width: 100%;
+    transition: .5s;
+} 
+
+.firstname {
+    color: red;
+}
+
+.aboutme h1 {
+    background-color: #ffff;
+    font-size: 30px;
+}
+
